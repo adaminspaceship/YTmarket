@@ -1,0 +1,6 @@
+framework module Pods_YT_MarketUITests {
+  umbrella header "Pods-YT MarketUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

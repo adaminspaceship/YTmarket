@@ -16,6 +16,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var currentSubCount = Int()
     let apiKey = "AIzaSyA31Aj4CG_qJOuVtzqRD_eUnWHdq2q1xBk"
     @IBOutlet var table: UITableView!
+    @IBOutlet var coinAmount: UILabel!
     
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -23,21 +24,28 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = NumberFormatter.Style.decimal
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! TableViewCell
         let currentChannel = channels[indexPath.row]
         self.getSubCount(channelID: currentChannel.channelID ?? "UCVtFOytbRpEvzLjvqGG5gxQ", completion: {
                 let num = self.currentSubCount-Int(currentChannel.initialSubCount)
+                let formattedNumber = numberFormatter.string(from: NSNumber(value:num))
                     if num > 0 {
-                        cell.percentChangeLabel.text = "▲ $\(self.currentSubCount-Int(currentChannel.initialSubCount))"
+                        cell.percentChangeLabel.text = "▲ $\(formattedNumber!)"
                         cell.percentChangeLabel.textColor = UIColor.green
+                    } else if num == 0 {
+                        cell.percentChangeLabel.text = " $\(formattedNumber!)"
+                        cell.percentChangeLabel.textColor = UIColor.orange
                     } else {
-                        cell.percentChangeLabel.text = "▼ $\(self.currentSubCount-Int(currentChannel.initialSubCount))"
+                        cell.percentChangeLabel.text = "▼ $\(formattedNumber!)"
                         cell.percentChangeLabel.textColor = UIColor.red
-            }
+                    }
+            let otherformatted = numberFormatter.string(from: NSNumber(value:self.currentSubCount))
+            cell.subCountLabel.text = "Sub Count: \(otherformatted!)"
         })
-        cell.channelNameLabel.text = currentChannel.name
-        cell.subCountLabel.text = "Sub Count: \(currentSubCount)"
         
+        cell.channelNameLabel.text = currentChannel.name
         //percent calculation
 //        let calc = currentSubCount-Int(currentChannel.initialSubCount)
 //        if calc > 0 {
@@ -58,6 +66,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         channels = CoreDataHelper.retrieveChannel()
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = NumberFormatter.Style.decimal
+        let formattedNumber = numberFormatter.string(from: NSNumber(value:UserDefaults.standard.integer(forKey: "userMoney")))
+        coinAmount.text = "$\(formattedNumber!)"
     }
     
     func getSubCount(channelID: String,completion : @escaping ()->()) {

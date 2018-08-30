@@ -51,11 +51,14 @@ class InfoViewController: UIViewController {
     }
     
     @IBAction func addToPortfolioButtonTapped(_ sender: Any) {
+        let defaults = UserDefaults.standard
         let new = CoreDataHelper.newChannel()
         new.initialSubCount = Int32(selectedChannel.subCount1)
         new.channelID = selectedChannel.channelID1
         new.name = selectedChannel.channelName1
         CoreDataHelper.saveChannel()
+        
+        
     }
     @IBOutlet var channelNameLabel: UILabel!
     @IBOutlet var channelThumbnailImage: UIImageView!
