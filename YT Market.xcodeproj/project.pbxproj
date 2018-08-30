@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B0EEA9087B7A45293B7FE40 /* Pods_YT_Market.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F51278BF6D061410185C00 /* Pods_YT_Market.framework */; };
+		593BC0DAE6A5E053E3019FF2 /* Pods_YT_MarketTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D75197857F90A367C5A6043 /* Pods_YT_MarketTests.framework */; };
+		99324C42213497FC00A55582 /* NewChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99324C41213497FC00A55582 /* NewChannelViewController.swift */; };
+		99324C4421349A4C00A55582 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99324C4321349A4C00A55582 /* TableCell.swift */; };
+		99324C462134A42F00A55582 /* SearchChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99324C452134A42F00A55582 /* SearchChannel.swift */; };
+		99324C482134AFC700A55582 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99324C472134AFC700A55582 /* InfoViewController.swift */; };
 		993D11BF2125063200013EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993D11BE2125063200013EE0 /* AppDelegate.swift */; };
 		993D11C12125063200013EE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993D11C02125063200013EE0 /* ViewController.swift */; };
 		993D11C42125063200013EE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 993D11C22125063200013EE0 /* Main.storyboard */; };
@@ -14,6 +20,10 @@
 		993D11C92125063A00013EE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 993D11C72125063A00013EE0 /* LaunchScreen.storyboard */; };
 		993D11D42125063B00013EE0 /* YT_MarketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993D11D32125063B00013EE0 /* YT_MarketTests.swift */; };
 		993D11DF2125063B00013EE0 /* YT_MarketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993D11DE2125063B00013EE0 /* YT_MarketUITests.swift */; };
+		99A65F07212508E700113F21 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A65F06212508E700113F21 /* TableViewCell.swift */; };
+		99A65F0C212511E500113F21 /* YT-Market.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 99A65F0A212511E500113F21 /* YT-Market.xcdatamodeld */; };
+		99A65F0E2125144D00113F21 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A65F0D2125144D00113F21 /* CoreDataHelper.swift */; };
+		C25E3B055BF4D22F8138B0EC /* Pods_YT_MarketUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8A5585DFCA38A1613EFA92 /* Pods_YT_MarketUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B5320ED54897C5082942F33 /* Pods-YT MarketUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YT MarketUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YT MarketUITests/Pods-YT MarketUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		16B6CBAE0B7089CF5783475E /* Pods-YT MarketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YT MarketTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YT MarketTests/Pods-YT MarketTests.release.xcconfig"; sourceTree = "<group>"; };
+		501D8D6B25153BD9198FCC08 /* Pods-YT MarketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YT MarketTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YT MarketTests/Pods-YT MarketTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6CC524152C5A9AE1FDDAEBE6 /* Pods-YT Market.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YT Market.release.xcconfig"; path = "Pods/Target Support Files/Pods-YT Market/Pods-YT Market.release.xcconfig"; sourceTree = "<group>"; };
+		760CB5ACE78A96DE9E222F5A /* Pods-YT MarketUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YT MarketUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YT MarketUITests/Pods-YT MarketUITests.release.xcconfig"; sourceTree = "<group>"; };
+		86F51278BF6D061410185C00 /* Pods_YT_Market.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YT_Market.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E8A5585DFCA38A1613EFA92 /* Pods_YT_MarketUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YT_MarketUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99324C41213497FC00A55582 /* NewChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChannelViewController.swift; sourceTree = "<group>"; };
+		99324C4321349A4C00A55582 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		99324C452134A42F00A55582 /* SearchChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchChannel.swift; sourceTree = "<group>"; };
+		99324C472134AFC700A55582 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoViewController.swift; path = Assets.xcassets/InfoViewController.swift; sourceTree = "<group>"; };
 		993D11BB2125063200013EE0 /* YT Market.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YT Market.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		993D11BE2125063200013EE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		993D11C02125063200013EE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +68,11 @@
 		993D11DA2125063B00013EE0 /* YT MarketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YT MarketUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		993D11DE2125063B00013EE0 /* YT_MarketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YT_MarketUITests.swift; sourceTree = "<group>"; };
 		993D11E02125063B00013EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99A65F06212508E700113F21 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		99A65F0B212511E500113F21 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		99A65F0D2125144D00113F21 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		9D75197857F90A367C5A6043 /* Pods_YT_MarketTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YT_MarketTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1A9008DA68CB2A8552C47A3 /* Pods-YT Market.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YT Market.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YT Market/Pods-YT Market.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B0EEA9087B7A45293B7FE40 /* Pods_YT_Market.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				593BC0DAE6A5E053E3019FF2 /* Pods_YT_MarketTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +96,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C25E3B055BF4D22F8138B0EC /* Pods_YT_MarketUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CFBBC9EBB6FDE5CC9364E21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86F51278BF6D061410185C00 /* Pods_YT_Market.framework */,
+				9D75197857F90A367C5A6043 /* Pods_YT_MarketTests.framework */,
+				8E8A5585DFCA38A1613EFA92 /* Pods_YT_MarketUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		993D11B22125063200013EE0 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +120,8 @@
 				993D11D22125063B00013EE0 /* YT MarketTests */,
 				993D11DD2125063B00013EE0 /* YT MarketUITests */,
 				993D11BC2125063200013EE0 /* Products */,
+				BF18B90679425F3FF5EDB39B /* Pods */,
+				1CFBBC9EBB6FDE5CC9364E21 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +138,16 @@
 		993D11BD2125063200013EE0 /* YT Market */ = {
 			isa = PBXGroup;
 			children = (
+				99A65F06212508E700113F21 /* TableViewCell.swift */,
 				993D11BE2125063200013EE0 /* AppDelegate.swift */,
 				993D11C02125063200013EE0 /* ViewController.swift */,
+				99324C41213497FC00A55582 /* NewChannelViewController.swift */,
+				99324C472134AFC700A55582 /* InfoViewController.swift */,
+				99324C452134A42F00A55582 /* SearchChannel.swift */,
+				99A65F0A212511E500113F21 /* YT-Market.xcdatamodeld */,
+				99A65F0D2125144D00113F21 /* CoreDataHelper.swift */,
 				993D11C22125063200013EE0 /* Main.storyboard */,
+				99324C4321349A4C00A55582 /* TableCell.swift */,
 				993D11C52125063A00013EE0 /* Assets.xcassets */,
 				993D11C72125063A00013EE0 /* LaunchScreen.storyboard */,
 				993D11CA2125063A00013EE0 /* Info.plist */,
@@ -125,6 +173,19 @@
 			path = "YT MarketUITests";
 			sourceTree = "<group>";
 		};
+		BF18B90679425F3FF5EDB39B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1A9008DA68CB2A8552C47A3 /* Pods-YT Market.debug.xcconfig */,
+				6CC524152C5A9AE1FDDAEBE6 /* Pods-YT Market.release.xcconfig */,
+				501D8D6B25153BD9198FCC08 /* Pods-YT MarketTests.debug.xcconfig */,
+				16B6CBAE0B7089CF5783475E /* Pods-YT MarketTests.release.xcconfig */,
+				0B5320ED54897C5082942F33 /* Pods-YT MarketUITests.debug.xcconfig */,
+				760CB5ACE78A96DE9E222F5A /* Pods-YT MarketUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +193,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 993D11E32125063B00013EE0 /* Build configuration list for PBXNativeTarget "YT Market" */;
 			buildPhases = (
+				42EF44FAC5C059EED999F236 /* [CP] Check Pods Manifest.lock */,
 				993D11B72125063200013EE0 /* Sources */,
 				993D11B82125063200013EE0 /* Frameworks */,
 				993D11B92125063200013EE0 /* Resources */,
+				A24BF6EE7B9BB552C6457528 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 993D11E62125063B00013EE0 /* Build configuration list for PBXNativeTarget "YT MarketTests" */;
 			buildPhases = (
+				074C228B18634387C0A06141 /* [CP] Check Pods Manifest.lock */,
 				993D11CB2125063B00013EE0 /* Sources */,
 				993D11CC2125063B00013EE0 /* Frameworks */,
 				993D11CD2125063B00013EE0 /* Resources */,
@@ -167,6 +231,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 993D11E92125063B00013EE0 /* Build configuration list for PBXNativeTarget "YT MarketUITests" */;
 			buildPhases = (
+				2FA849977F17BEF2EDB61F74 /* [CP] Check Pods Manifest.lock */,
 				993D11D62125063B00013EE0 /* Sources */,
 				993D11D72125063B00013EE0 /* Frameworks */,
 				993D11D82125063B00013EE0 /* Resources */,
@@ -251,13 +316,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		074C228B18634387C0A06141 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YT MarketTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FA849977F17BEF2EDB61F74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YT MarketUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42EF44FAC5C059EED999F236 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YT Market-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A24BF6EE7B9BB552C6457528 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YT Market/Pods-YT Market-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YT Market/Pods-YT Market-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		993D11B72125063200013EE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99A65F0E2125144D00113F21 /* CoreDataHelper.swift in Sources */,
+				99A65F07212508E700113F21 /* TableViewCell.swift in Sources */,
+				99A65F0C212511E500113F21 /* YT-Market.xcdatamodeld in Sources */,
+				99324C4421349A4C00A55582 /* TableCell.swift in Sources */,
+				99324C482134AFC700A55582 /* InfoViewController.swift in Sources */,
 				993D11C12125063200013EE0 /* ViewController.swift in Sources */,
+				99324C462134A42F00A55582 /* SearchChannel.swift in Sources */,
 				993D11BF2125063200013EE0 /* AppDelegate.swift in Sources */,
+				99324C42213497FC00A55582 /* NewChannelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +577,7 @@
 		};
 		993D11E42125063B00013EE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1A9008DA68CB2A8552C47A3 /* Pods-YT Market.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +596,7 @@
 		};
 		993D11E52125063B00013EE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CC524152C5A9AE1FDDAEBE6 /* Pods-YT Market.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +615,7 @@
 		};
 		993D11E72125063B00013EE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 501D8D6B25153BD9198FCC08 /* Pods-YT MarketTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +637,7 @@
 		};
 		993D11E82125063B00013EE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16B6CBAE0B7089CF5783475E /* Pods-YT MarketTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +659,7 @@
 		};
 		993D11EA2125063B00013EE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B5320ED54897C5082942F33 /* Pods-YT MarketUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +680,7 @@
 		};
 		993D11EB2125063B00013EE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 760CB5ACE78A96DE9E222F5A /* Pods-YT MarketUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -584,6 +739,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		99A65F0A212511E500113F21 /* YT-Market.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				99A65F0B212511E500113F21 /* Model.xcdatamodel */,
+			);
+			currentVersion = 99A65F0B212511E500113F21 /* Model.xcdatamodel */;
+			path = "YT-Market.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 993D11B32125063200013EE0 /* Project object */;
 }
