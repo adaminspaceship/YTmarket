@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Oz-uy-67Q">
-                                <rect key="frame" x="0.0" y="116" width="375" height="551"/>
+                                <rect key="frame" x="0.0" y="161" width="375" height="506"/>
                                 <color key="backgroundColor" red="0.24705882352941178" green="0.25490196078431371" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="100" id="eX1-uQ-Zey" customClass="TableViewCell" customModule="YT_Market" customModuleProvider="target">
@@ -84,8 +84,23 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="jb7-Rl-6rj"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="potential net worth" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndp-0G-jqn">
+                                <rect key="frame" x="108" y="101" width="159" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="159" id="4kp-kK-3qT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQZ-5S-bev">
+                                <rect key="frame" x="16" y="129" width="343" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfw-aD-ZNr">
-                                <rect key="frame" x="48" y="29" width="279" height="73"/>
+                                <rect key="frame" x="48" y="20" width="279" height="73"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="65"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -93,14 +108,21 @@
                         </subviews>
                         <color key="backgroundColor" red="0.2470588235" green="0.25490196079999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Nfw-aD-ZNr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="E5m-d2-pKA"/>
+                            <constraint firstItem="ndp-0G-jqn" firstAttribute="top" secondItem="Nfw-aD-ZNr" secondAttribute="bottom" constant="8" id="1SE-pA-i5U"/>
+                            <constraint firstItem="ndp-0G-jqn" firstAttribute="baseline" secondItem="RQZ-5S-bev" secondAttribute="baseline" constant="-28" id="87b-H6-G2l"/>
+                            <constraint firstItem="Nfw-aD-ZNr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="E5m-d2-pKA"/>
+                            <constraint firstItem="RQZ-5S-bev" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EG2-jj-Y4k"/>
                             <constraint firstItem="4Oz-uy-67Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HQF-9A-Uyx"/>
                             <constraint firstItem="Nfw-aD-ZNr" firstAttribute="centerX" secondItem="4Oz-uy-67Q" secondAttribute="centerX" id="Hyh-cf-xcK"/>
+                            <constraint firstItem="ndp-0G-jqn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MA0-U0-vYf"/>
+                            <constraint firstItem="RQZ-5S-bev" firstAttribute="leading" secondItem="ndp-0G-jqn" secondAttribute="trailing" constant="-251" id="XDH-68-A45"/>
                             <constraint firstItem="Nfw-aD-ZNr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="dIy-lq-FDD"/>
+                            <constraint firstItem="RQZ-5S-bev" firstAttribute="trailing" secondItem="Nfw-aD-ZNr" secondAttribute="trailing" constant="32" id="djq-jG-tZS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Oz-uy-67Q" secondAttribute="bottom" id="fIy-X1-aHU"/>
+                            <constraint firstItem="ndp-0G-jqn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="o5e-Hl-YoL"/>
                             <constraint firstAttribute="trailing" secondItem="4Oz-uy-67Q" secondAttribute="trailing" id="rkD-0z-Z7t"/>
-                            <constraint firstItem="4Oz-uy-67Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="96" id="y1m-Z7-fCZ"/>
-                            <constraint firstItem="4Oz-uy-67Q" firstAttribute="top" secondItem="Nfw-aD-ZNr" secondAttribute="bottom" constant="14" id="zmz-9T-XQA"/>
+                            <constraint firstItem="4Oz-uy-67Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="141" id="y1m-Z7-fCZ"/>
+                            <constraint firstItem="4Oz-uy-67Q" firstAttribute="top" secondItem="Nfw-aD-ZNr" secondAttribute="bottom" constant="68" id="zmz-9T-XQA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -108,6 +130,7 @@
                     <navigationItem key="navigationItem" title="YT Market" id="g7R-Qh-YW8"/>
                     <connections>
                         <outlet property="coinAmount" destination="Nfw-aD-ZNr" id="Uj8-Cs-ZmY"/>
+                        <outlet property="potentialCoinAmount" destination="RQZ-5S-bev" id="WkQ-QN-Gv8"/>
                         <outlet property="table" destination="4Oz-uy-67Q" id="l3s-DB-xg9"/>
                     </connections>
                 </viewController>

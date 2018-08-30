@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             print("First launch, setting UserDefault.")
             UserDefaults.standard.set(true, forKey: "launchedBefore")
-            UserDefaults.standard.set(10000, forKey: "userMoney")
+            UserDefaults.standard.set(500000, forKey: "userMoney")
         }
         
         return true

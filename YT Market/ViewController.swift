@@ -17,7 +17,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let apiKey = "AIzaSyA31Aj4CG_qJOuVtzqRD_eUnWHdq2q1xBk"
     @IBOutlet var table: UITableView!
     @IBOutlet var coinAmount: UILabel!
-    
+    @IBOutlet var potentialCoinAmount: UILabel!
+    var currentCoinAmount = Int()
+    var potCoinAmount = Int()
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return channels.count
@@ -33,16 +35,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 let formattedNumber = numberFormatter.string(from: NSNumber(value:num))
                     if num > 0 {
                         cell.percentChangeLabel.text = "▲ $\(formattedNumber!)"
+                        self.potCoinAmount += num
                         cell.percentChangeLabel.textColor = UIColor.green
                     } else if num == 0 {
-                        cell.percentChangeLabel.text = " $\(formattedNumber!)"
+                        cell.percentChangeLabel.text = "▶ $\(formattedNumber!)"
                         cell.percentChangeLabel.textColor = UIColor.orange
+                        self.potCoinAmount += num
                     } else {
                         cell.percentChangeLabel.text = "▼ $\(formattedNumber!)"
                         cell.percentChangeLabel.textColor = UIColor.red
+                        self.potCoinAmount += num
                     }
             let otherformatted = numberFormatter.string(from: NSNumber(value:self.currentSubCount))
             cell.subCountLabel.text = "Sub Count: \(otherformatted!)"
+            
+            self.potentialCoinAmount.text = "$\(self.currentCoinAmount+self.potCoinAmount)"
         })
         
         cell.channelNameLabel.text = currentChannel.name
@@ -70,6 +77,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         numberFormatter.numberStyle = NumberFormatter.Style.decimal
         let formattedNumber = numberFormatter.string(from: NSNumber(value:UserDefaults.standard.integer(forKey: "userMoney")))
         coinAmount.text = "$\(formattedNumber!)"
+        currentCoinAmount = UserDefaults.standard.integer(forKey: "userMoney")
     }
     
     func getSubCount(channelID: String,completion : @escaping ()->()) {

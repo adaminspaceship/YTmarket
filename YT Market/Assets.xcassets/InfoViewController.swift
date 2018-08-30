@@ -57,7 +57,13 @@ class InfoViewController: UIViewController {
         new.channelID = selectedChannel.channelID1
         new.name = selectedChannel.channelName1
         CoreDataHelper.saveChannel()
-        
+        let currentMoney = defaults.integer(forKey: "userMoney")
+        if currentMoney-selectedChannel.subCount1 > 0 {
+            let newMoneyAmount = currentMoney-selectedChannel.subCount1
+            defaults.set(newMoneyAmount, forKey: "userMoney")
+        } else {
+            print("can't, not enough money")
+        }
         
     }
     @IBOutlet var channelNameLabel: UILabel!
